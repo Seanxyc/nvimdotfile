@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/seanchen/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
+  ["cmp-npm"] = {
+    loaded = true,
+    path = "/Users/seanchen/.local/share/nvim/site/pack/packer/start/cmp-npm",
+    url = "https://github.com/David-Kunz/cmp-npm"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "/Users/seanchen/.local/share/nvim/site/pack/packer/start/cmp-path",
