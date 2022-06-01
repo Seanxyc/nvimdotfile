@@ -6,4 +6,5 @@ require "yaroga.cmp"
 require "yaroga.lsp"
 require "yaroga.telescope"
 require "yaroga.treesitter"
+require "yaroga.autopairs"
 
