@@ -9,4 +9,5 @@ require "yaroga.treesitter"
 require "yaroga.autopairs"
 require "yaroga.comments"
 require "yaroga.gitsigns"
+require "yaroga.nvim-tree"
 
