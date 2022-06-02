@@ -7,4 +7,5 @@ require "yaroga.lsp"
 require "yaroga.telescope"
 require "yaroga.treesitter"
 require "yaroga.autopairs"
+require "yaroga.comments"
 

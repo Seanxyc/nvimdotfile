@@ -42,5 +42,11 @@ configs.setup {
   playground = {
     enable = true,
   },
+
+  -- comments --
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  }
 }
 
