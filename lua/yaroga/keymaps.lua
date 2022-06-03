@@ -89,6 +89,7 @@ keymap("n", "<leader>r", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", ";q", ":Bdelete<cr>", opts)
 
 -- Format
 keymap("n", "<;f>", ":Format<cr>", opts)
@@ -96,5 +97,3 @@ keymap("n", "<;f>", ":Format<cr>", opts)
 -- ToggleTerm
 keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
 
--- TODO
--- keymap("n", "<leader>q", ":Bdelete", opts)

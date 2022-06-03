@@ -52,6 +52,8 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use 'nvim-lualine/lualine.nvim'
   use "akinsho/toggleterm.nvim"
+  use "ahmedkhalf/project.nvim"
+
 
   -- cmp plugins --
   use "hrsh7th/nvim-cmp" -- The completion plugin
