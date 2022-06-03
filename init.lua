@@ -11,4 +11,5 @@ require "yaroga.comments"
 require "yaroga.gitsigns"
 require "yaroga.nvim-tree"
 require "yaroga.bufferline"
+require "yaroga.lualine"
 
