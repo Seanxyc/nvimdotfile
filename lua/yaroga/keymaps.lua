@@ -94,5 +94,8 @@ keymap("n", "<leader>r", "<cmd>Telescope live_grep<cr>", opts)
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+
+keymap("n", "<S-f>", ":Format<cr>", opts)
+
 -- TODO
 -- keymap("n", "<leader>q", ":Bdelete", opts)

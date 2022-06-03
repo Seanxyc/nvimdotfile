@@ -51,10 +51,6 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
 
-  -- Colorschemes --
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
-
   -- cmp plugins --
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -73,6 +69,7 @@ return packer.startup(function(use)
   -- LSP --
   use "neovim/nvim-lspconfig" --enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use langage server installer
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
