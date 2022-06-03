@@ -18,7 +18,6 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
-
 -- Normal --
 -- Window
 -- Split window
@@ -47,11 +46,9 @@ keymap("n", "<C-w><right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
-
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
-
 
 -- visual --
 -- stay in indent mode
@@ -66,7 +63,6 @@ keymap("v", "˚", ":m .-2<cr>==", opts)
 -- keymap("v", "<A-j>", ":m .+1<cr>==", opts)
 -- keymap("v", "<A-k>", ":m .-2<cr>==", opts)
 keymap("v", "p", '"_dp', opts)
-
 
 -- Visual Block --
 -- Move text up and down
@@ -91,11 +87,14 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>r", "<cmd>Telescope live_grep<cr>", opts)
 
--- Nvimtree
+-- Nvimtree --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Format
+keymap("n", "<;f>", ":Format<cr>", opts)
 
-keymap("n", "<S-f>", ":Format<cr>", opts)
+-- ToggleTerm
+keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
 
 -- TODO
 -- keymap("n", "<leader>q", ":Bdelete", opts)
