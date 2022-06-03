@@ -7,4 +7,3 @@ require "yaroga.lsp.lsp-signature"
 require "yaroga.lsp.lsp-installer"
 require("yaroga.lsp.handlers").setup()
 require "yaroga.lsp.null-ls"
-
