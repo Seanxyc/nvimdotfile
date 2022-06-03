@@ -28,7 +28,6 @@ vim.g.indent_blankline_context_patterns = {
 	"method",
 	"^if",
 	"^while",
-	"jsx_element",
 	"^for",
 	"^object",
 	"^table",
@@ -42,6 +41,8 @@ vim.g.indent_blankline_context_patterns = {
 	"catch_clause",
 	"import_statement",
 	"operation_type",
+  "switch",
+  "case",
 }
 -- HACK: work-around for https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
 vim.wo.colorcolumn = "99999"
