@@ -57,7 +57,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use { 'goolord/alpha-nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
   use { 'folke/todo-comments.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-
+   use "MattesGroeger/vim-bookmarks"
 
   -- cmp plugins --
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -87,6 +87,8 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   -- use 'nvim-telescope/telescope-media-files.nvim'
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+  use "nvim-telescope/telescope-file-browser.nvim"
 
   -- Treesitter
   use {
