@@ -57,7 +57,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use { 'goolord/alpha-nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
   use { 'folke/todo-comments.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-   use "MattesGroeger/vim-bookmarks"
+  use "MattesGroeger/vim-bookmarks"
 
   -- cmp plugins --
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -98,6 +98,8 @@ return packer.startup(function(use)
   use 'JoosepAlviste/nvim-ts-context-commentstring'
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
+  use "windwp/nvim-ts-autotag"
+  use "romgrk/nvim-treesitter-context"
 
   -- Git --
   use "lewis6991/gitsigns.nvim"
