@@ -55,8 +55,8 @@ return packer.startup(function(use)
   use "ahmedkhalf/project.nvim"
   use 'lewis6991/impatient.nvim'
   use "lukas-reineke/indent-blankline.nvim"
-  use {'goolord/alpha-nvim', requires = {'kyazdani42/nvim-web-devicons'}}
-  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+  use { 'goolord/alpha-nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
+  use { 'folke/todo-comments.nvim', requires = { 'nvim-lua/plenary.nvim' } }
 
 
   -- cmp plugins --
@@ -80,6 +80,7 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "b0o/SchemaStore.nvim"
   use "ray-x/lsp_signature.nvim"
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
