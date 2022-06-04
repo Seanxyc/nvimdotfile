@@ -81,6 +81,7 @@ return packer.startup(function(use)
   use "b0o/SchemaStore.nvim"
   use "ray-x/lsp_signature.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+  use "filipdutescu/renamer.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
