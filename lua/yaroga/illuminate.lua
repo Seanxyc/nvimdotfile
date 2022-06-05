@@ -8,4 +8,4 @@ vim.g.Illuminate_ftblacklist = { 'alpha', 'NvimTree' }
 -- mac
 -- FIXME:
 vim.api.nvim_set_keymap('n', '<leader>l', '<cmd>lua require"illuminate".next_reference{wrap=true}<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>h', '<cmd>lua require"illuminate".next_reference{reverse=true,wrap=true,range_ordering="disjoint"}<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>h', '<cmd>lua require"illuminate".next_reference{reverse=true,wrap=true}<cr>', { noremap = true })
