@@ -100,3 +100,5 @@ keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
 
 
 keymap("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
+
+keymap('n', '<leader>l', ':lua require"illuminate".next_reference{wrap=true}<cr>', opts)

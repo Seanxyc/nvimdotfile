@@ -84,6 +84,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "filipdutescu/renamer.nvim"
   use "simrat39/symbols-outline.nvim"
+  use "RRethy/vim-illuminate"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
