@@ -67,6 +67,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use "rcarriga/cmp-dap"
   -- dev
   use "David-Kunz/cmp-npm" -- autocomplete npm
 
@@ -108,6 +109,12 @@ return packer.startup(function(use)
   use "mattn/webapi-vim"
   -- use "ruifm/gitlinker.nvim"
   -- use "https://github.com/rhysd/conflict-marker.vim"
+
+  -- DAP
+  use "mfussenegger/nvim-dap"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "rcarriga/nvim-dap-ui"
+  -- use "Pocco81/DAPInstall.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

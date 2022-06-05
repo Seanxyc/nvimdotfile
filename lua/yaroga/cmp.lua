@@ -3,6 +3,11 @@ if not cmp_status_ok then
   return
 end
 
+local cmp_dap_status_ok, cmp_dap = pcall(require, "cmp_dap")
+if not cmp_dap_status_ok then
+  return
+end
+
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
   return
@@ -53,7 +58,7 @@ cmp.setup {
   },
   mapping = {
     ["<C-k>"] = cmp.mapping.select_prev_item(),
-		["<C-j>"] = cmp.mapping.select_next_item(),
+    ["<C-j>"] = cmp.mapping.select_next_item(),
     ["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-1), { "i", "c" }),
     ["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
     ["<C-g>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
@@ -98,7 +103,7 @@ cmp.setup {
     fields = { "kind", "abbr", "menu" },
     format = function(entry, vim_item)
       -- Kind icons
-     -- vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
+      -- vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
@@ -106,6 +111,7 @@ cmp.setup {
         luasnip = "[Snip]",
         buffer = "[Buf]",
         path = "[Path]",
+        dap = "[Dap]",
       })[entry.source.name]
       return vim_item
     end,
@@ -117,6 +123,7 @@ cmp.setup {
     { name = "buffer" },
     { name = "path" },
     { name = "npm" },
+    { name = "dap" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
@@ -132,4 +139,3 @@ cmp.setup {
     native_menu = false,
   },
 }
-
