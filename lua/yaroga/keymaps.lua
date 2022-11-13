@@ -19,8 +19,10 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+keymap('n', "<C-a>", "gg<S-v>G", opts)
 -- Window
 -- Split window
+keymap("n", "te", "tabedit<Return>", opts)
 keymap("n", "ss", ":split<Return><C-w>j", opts)
 keymap("n", "sv", ":vsplit<Return><C-w>l", opts)
 
@@ -47,7 +49,7 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to enter-- k
 keymap("i", "jk", "<ESC>", opts)
 
 -- visual --
@@ -90,7 +92,7 @@ keymap("n", "<leader>m", "<cmd>Telescope vim_bookmarks all<cr>", opts)
 
 -- Nvimtree --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", ";q", ":Bdelete<cr>", opts)
+keymap("n", "<C-x>", ":Bdelete<cr>", opts)
 
 -- Format
 keymap("n", "<;f>", ":Format<cr>", opts)

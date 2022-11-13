@@ -48,7 +48,8 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
-  use "akinsho/bufferline.nvim"
+  --[[ use "akinsho/bufferline.nvim" ]]
+  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
   use "moll/vim-bbye"
   use 'nvim-lualine/lualine.nvim'
   use "akinsho/toggleterm.nvim"
@@ -56,8 +57,13 @@ return packer.startup(function(use)
   use 'lewis6991/impatient.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   use { 'goolord/alpha-nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
-  use { 'folke/todo-comments.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use { 'folke/todo-comments.nvim', branch = "neovim-pre-0.8.0", requires = { 'nvim-lua/plenary.nvim' } }
   use "MattesGroeger/vim-bookmarks"
+  -- colorscheme
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
 
   -- cmp plugins --
   use "hrsh7th/nvim-cmp" -- The completion plugin

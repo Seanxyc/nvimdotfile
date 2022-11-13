@@ -1,7 +1,8 @@
 require "yaroga.options"
 require "yaroga.keymaps"
 require "yaroga.plugins"
-require "yaroga.colorscheme"
+--[[ require "yaroga.colorscheme" ]]
+require "yaroga.NeoSolarized"
 require "yaroga.cmp"
 require "yaroga.lsp"
 require "yaroga.telescope"
@@ -17,7 +18,7 @@ require "yaroga.project"
 require "yaroga.impatient"
 require "yaroga.indentline"
 require "yaroga.startup"
-require "yaroga.todo-comments"
+require "yaroga.todo-comments" -- not available with nvim 0.7
 require "yaroga.renamer"
 require "yaroga.symbol-outline"
 require "yaroga.treesitter-contex"

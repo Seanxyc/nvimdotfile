@@ -7,9 +7,5 @@ if ((vim.api.nvim_eval('exists("&termguicolors")')) and (vim.api.nvim_eval('exis
     set pumblend=5
     set background=dark
     let g:neosolarized_termtrans=1
-    runtime ./colors/NeoSolarized.vim
-    colorscheme NeoSolarized
   ]]
 end
-
-

@@ -45,7 +45,7 @@ M.setup = function()
   })
 end
 
-  -- if client.server_capabilities.document_highlight then
+-- if client.server_capabilities.document_highlight then
 local function lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
