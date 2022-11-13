@@ -5,8 +5,8 @@ end
 
 local servers = {
   "cssls",
-  "cssmodules_ls",
-  "emmet_ls",
+  --[[ "cssmodules_ls", ]]
+  --[[ "emmet_ls", ]]
   "html",
   "jsonls",
   -- "solc",
@@ -79,6 +79,10 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
   end
 
+  if server == "tsserver" then
+    filetypes = { "typescript", "typescriptreact", "typescript.tsx" }
+  end
+
   -- if server == "solang" then
   --   local solang_opts = require "yaroga.lsp.settings.solang"
   --   opts = vim.tbl_deep_extend("force", solang_opts, opts)
@@ -96,6 +100,3 @@ for _, server in pairs(servers) do
 
   lspconfig[server].setup(opts)
 end
-
--- TODO: add something to installer later
--- require("lspconfig").motoko.setup {}
