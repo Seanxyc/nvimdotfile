@@ -92,7 +92,7 @@ keymap("n", "<leader>m", "<cmd>Telescope vim_bookmarks all<cr>", opts)
 
 -- Nvimtree --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<C-x>", ":Bdelete<cr>", opts)
+keymap("n", "<C-x>", ":Bdelete!<cr>", opts)
 
 -- Format
 keymap("n", "<;f>", ":Format<cr>", opts)

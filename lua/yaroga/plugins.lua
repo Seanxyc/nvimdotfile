@@ -1,7 +1,7 @@
 local fn = vim.fn
 
 -- Automatically install packer
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+ local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
   PACKER_BOOTSTRAP = fn.system {
     "git",
@@ -83,10 +83,16 @@ return packer.startup(function(use)
 
   -- LSP --
   use "neovim/nvim-lspconfig" --enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use langage server installer
+  --[[ use "williamboman/nvim-lsp-installer" -- simple to use langage server installer ]]
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "b0o/SchemaStore.nvim"
   use "ray-x/lsp_signature.nvim"
+  use "SmiteshP/nvim-navic"
+  use "lvimuser/lsp-inlayhints.nvim"
+  use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
+
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "filipdutescu/renamer.nvim"
   use "simrat39/symbols-outline.nvim"
@@ -122,6 +128,10 @@ return packer.startup(function(use)
   use "theHamsta/nvim-dap-virtual-text"
   use "rcarriga/nvim-dap-ui"
   -- use "Pocco81/DAPInstall.nvim"
+
+
+  -- Lua Development
+  use "christianchiarulli/lua-dev.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
