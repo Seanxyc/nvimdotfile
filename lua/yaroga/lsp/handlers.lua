@@ -80,6 +80,7 @@ local function lsp_keymaps(bufnr)
   -- 	'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })<CR>',
   -- 	opts
   -- )
+  vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", '<cmd>lua vim.diagnostic.prev({ border = "rounded" })<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
   vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting_sync()' ]])
@@ -95,8 +96,9 @@ M.on_attach = function(client, bufnr)
 
   M.enable_format_on_save()
 
-  if client.name == "tsserver" then
+  if client.name == "tsserver"  then
     require("lsp-inlayhints").on_attach(client, bufnr)
+    client.resolved_capabilities.document_formatting = false
   end
 end
 
