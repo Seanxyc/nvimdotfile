@@ -96,7 +96,7 @@ M.on_attach = function(client, bufnr)
 
   M.enable_format_on_save()
 
-  if client.name == "tsserver"  then
+  if client.name == "tsserver" then
     require("lsp-inlayhints").on_attach(client, bufnr)
     client.resolved_capabilities.document_formatting = false
   end
