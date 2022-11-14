@@ -1,8 +1,8 @@
 return {
   settings = {
     typescript = {
+      --[[   includeInlayEnumMemberValueHints = true, ]]
       inlayHints = {
-        includeInlayEnumMemberValueHints = true,
         includeInlayFunctionLikeReturnTypeHints = true,
         includeInlayFunctionParameterTypeHints = true,
         includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';

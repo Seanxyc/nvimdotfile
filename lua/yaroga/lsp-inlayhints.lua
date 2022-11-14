@@ -47,4 +47,3 @@ hints.setup {
   },
   debug_mode = false,
 }
-
