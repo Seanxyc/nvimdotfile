@@ -95,7 +95,7 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<C-x>", ":Bdelete!<cr>", opts)
 
 -- Format
-keymap("n", "<;f>", ":Format<cr>", opts)
+keymap("n", "<leader>F", ":Format<cr>", opts)
 
 -- ToggleTerm
 keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
