@@ -101,6 +101,8 @@ for _, server in pairs(servers) do
 
   if server == "volar" then
     --[[ opts = vim.tbl_deep_extend("force", volar_opts, opts) ]]
+    --[[ require('yaroga.lsp.volar') ]]
+    --[[ goto continue ]]
   end
 
   if server == "pyright" then

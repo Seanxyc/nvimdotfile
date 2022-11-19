@@ -100,6 +100,12 @@ M.on_attach = function(client, bufnr)
     require("lsp-inlayhints").on_attach(client, bufnr)
     client.resolved_capabilities.document_formatting = false
   end
+
+  if client.name == 'volar' then
+    require("lsp-inlayhints").on_attach(client, bufnr)
+    --[[ require("null-ls").disable({ "prettier" }) ]]
+  end
+
 end
 
 function M.enable_format_on_save()
