@@ -106,3 +106,6 @@ keymap("n", "<C-c>", ":lua require'dap'.continue()<cr>", opts)
 keymap("n", "<C-o>", ":lua require'dap'.step_over()<cr>", opts)
 keymap("n", "<C-i>", ":lua require'dap'.step_into()<cr>", opts)
 -- keymap("n", "", ":lua require'dap'.repl.open()<cr>", opts)
+
+-- test
+keymap("n", "<leader>t", ":lua require'neotest'.run.run()<cr>", opts)
