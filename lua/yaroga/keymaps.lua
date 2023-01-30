@@ -102,9 +102,9 @@ keymap("n", "<leader>g", ":lua _LAZYGIT_TOGGLE()<cr>", opts)
 
 -- Debug
 keymap("n", "<leader>b", ":lua require'dap'.toggle_breakpoint()<cr>", opts)
-keymap("n", "<C-c>", ":lua require'dap'.continue()<cr>", opts)
-keymap("n", "<C-o>", ":lua require'dap'.step_over()<cr>", opts)
-keymap("n", "<C-i>", ":lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<leadder>c", ":lua require'dap'.continue()<cr>", opts)
+keymap("n", "<leader>o", ":lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<leader>i", ":lua require'dap'.step_into()<cr>", opts)
 -- keymap("n", "", ":lua require'dap'.repl.open()<cr>", opts)
 
 -- test
