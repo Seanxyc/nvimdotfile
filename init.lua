@@ -1,5 +1,7 @@
 if vim.g.vscode then
+  require "vscode.options"
   require "vscode.keymaps"
+  require "yaroga.illuminate"
 else
   require "yaroga.options"
   require "yaroga.keymaps"

@@ -25,3 +25,19 @@ keymap("n", "s<left>", "<C-w>h", opts)
 keymap("n", "s<down>", "<C-w>j", opts)
 keymap("n", "s<up>", "<C-w>k", opts)
 keymap("n", "s<right>", "<C-w>l", opts)
+
+-- visual --
+-- stay in indent mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
+
+-- Visual Block --
+-- Move text up and down
+keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+-- Mac
+keymap("x", "∆", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "˚", ":move '<-2<CR>gv-gv", opts)
+-- Win
+-- keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+-- keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
